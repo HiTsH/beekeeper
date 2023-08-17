@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "beekeeper_backend": {
+      "main": "src/beekeeper_backend/main.mo",
+      "type": "motoko"
+    },
+    "beekeeper_frontend": {
+      "dependencies": [
+        "beekeeper_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/beekeeper_frontend/src/index.html"
+      },
+      "source": [
+        "src/beekeeper_frontend/assets",
+        "dist/beekeeper_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
