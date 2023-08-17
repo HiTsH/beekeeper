@@ -21,7 +21,7 @@ actor Beekeeper {
 
     // push method adds to index 0
     notes := List.push(newNote, notes);
-    Debug.print(debug_show (notes));
+    //Debug.print(debug_show (notes));
 
   };
 
